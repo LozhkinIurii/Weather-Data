@@ -1,0 +1,264 @@
+body{
+    background-color:rgb(76, 91, 107);
+    color: whitesmoke;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    width: 20%;
+    height: 40px; 
+    cursor: pointer;
+    background-color:deepskyblue;
+    font-size: 16px;
+    border: solid 0.5px black;
+}
+button:hover{
+    background-color: rgb(101, 211, 248);
+}
+table {
+    border-collapse: collapse;
+    margin: 15px;
+    float: left;
+}
+tr, th, td {
+    border: 1px solid gray;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+th{
+    text-align: center;
+    color: black
+}
+#heading{
+    text-align: center;
+    background-color: rgb(236, 204, 114);
+}
+#row{
+    font-size: 14px;
+}
+#num{
+    text-align: center;
+}
+h3{
+    margin-left: 10px;
+    font-size: 18px;
+}
+#chart{
+    float: inline;
+    padding-left: 100px;
+}
+#info{
+    margin:10px;
+}
+.dropdown-temperature{
+    position: relative;
+    display: inline;
+    width: 25%;
+    margin-left: -5px;
+    font-size: 0;
+}
+.dropdown-temperature:hover .dropdown-content-temperature {
+    display: block;
+}
+.dropdown-content-temperature{
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-color: deepskyblue; 
+    border-radius: 5px;   
+    margin-left: 100%;
+    border: solid black 0.5px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.dropdown-content-temperature a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+}
+.dropdown-wind{
+    position: relative;
+    display: inline;
+    width: 25%;
+    font-size: 0;
+    
+}
+.dropdown-wind:hover .dropdown-content-wind {
+    display: block;
+}
+.dropdown-content-wind{
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-color: deepskyblue; 
+    border-radius: 5px;   
+    margin-left: 200%;
+    cursor: pointer;
+    border: solid black 0.5px;
+}
+.dropdown-content-wind a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+.dropdown-content-wind a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+}
+#dropdown-content-other{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 80%;
+    background-color: deepskyblue; 
+    border-radius: 5px;
+    width: 7%;
+    border: solid black 0.5px;
+}
+#dropdown-content-other a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+}
+#dropdown-content-other a{
+    display: block;
+    color: black;
+    padding-left: 10px;
+}
+.dropdown-other:hover #dropdown-content-other{
+    display: block;
+}
+.dropdown-other{
+    display: inline;
+}
+#typesNow{
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    width: 150px;
+    background-color: deepskyblue;
+    border-radius: 4px;
+    border: solid 0.5px black;
+}
+#now:hover #typesNow{
+    display: block;
+}
+#typesNow a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+    
+}
+#types24{
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 100%;
+    top: 20%;
+    background-color: deepskyblue;
+    border-radius: 4px;
+    border: solid 0.5px black;
+}
+#hours24:hover #types24{
+    display: block;
+}
+#types24 a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+}
+#types48{
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 100%;
+    top: 40%;
+    background-color: deepskyblue;
+    border-radius: 4px;
+    border: solid 0.5px black;
+}
+#hours48:hover #types48{
+    display: block;
+}
+#types48 a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+}
+#types72{
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 100%;
+    top: 60%;
+    background-color: deepskyblue;
+    border-radius: 4px;
+    border: solid 0.5px black;
+}
+#hours72:hover #types72{
+    display: block;
+}
+#types72 a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+}
+#typesWeek{
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 100%;
+    top: 80%;
+    background-color: deepskyblue;
+    border-radius: 4px;
+    border: solid 0.5px black;
+}
+#week:hover #typesWeek{
+    display: block;
+}
+#typesWeek a:hover{
+    background-color: rgb(101, 211, 248);
+    border-radius: 4px;
+}
+#infoButton{
+    font-size: 0;
+    display: inline;
+}
+.arrowButton{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    padding: 3px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.arrowDrop{
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+    padding: 2px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+#theme{
+    position: fixed;
+    right: 1%;
+    top: 95%;
+    width: 5%;
+    height: 20px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    font-size: 12px;
+    display: block;
+    color: black;
+}
+.sortHeader{
+    cursor: pointer;
+}
+.sortHeader:hover{
+    background-color: rgb(229, 213, 170)
+}

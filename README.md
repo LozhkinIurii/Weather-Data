@@ -1,0 +1,1 @@
+The project is part of the university's (TAMK) Web Development course. It was made by using JavaScript and HTML. A weather data is fetched from the university's API and put into readable HTML format as tables and charts.

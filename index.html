@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course assignment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+        <link rel="stylesheet" type="text/css" href="course_assignment.css">
+        <script src="course_assignment.js"></script>
+    </head>
+    <body id="body">
+        <button type="button" onclick="showMixed()">Latest 30 measurements</button>
+        <div class="dropdown-temperature">
+            <button type="button">Temperature<span class="arrowButton"></span></button>
+            <div class="dropdown-content-temperature">
+                <a onclick="showNow(20,'temperature','temperature','bar')">Now</a>
+                <a onclick="showHourly('temperature',24,'temperature','bar')">24 hours</a>
+                <a onclick="showHourly('temperature',48,'temperature','bar')">48 hours</a>
+                <a onclick="showHourly('temperature',72,'temperature','bar')">72 hours</a>
+                <a onclick="showHourly('temperature',168,'temperature','bar')">1 week</a>
+            </div>
+        </div>
+        <div class="dropdown-wind">
+            <button type="button">Wind speed<span class="arrowButton"></span></button>
+            <div class="dropdown-content-wind">
+                <a onclick="showNow(20,'wind_speed','wind speed','bar')">Now</a>
+                <a onclick="showHourly('wind_speed',24,'wind speed','bar')">24 hours</a>
+                <a onclick="showHourly('wind_speed',48,'wind speed','bar')">48 hours</a>
+                <a onclick="showHourly('wind_speed',72,'wind speed','bar')">72 hours</a>
+                <a onclick="showHourly('wind_speed',168,'wind speed','bar')">1 week</a>
+            </div>
+        </div>
+        <div id="infoButton">
+            <button type="button" onclick="showInfo()">Info</button>
+        </div>
+        <div class="dropdown-other">
+            <button type="button">Different measurements<span class="arrowButton"></span></button>
+            <div id="dropdown-content-other">
+                <div id="now">
+                    <a >Now<span class="arrowDrop"></span></a>
+                    <div id="typesNow">
+                        <a onclick="showNow(25,'rain','rain amount','line')">Rain</a>
+                        <a onclick="showNow(25,'wind_speed','wind speed','line')">Wind speed</a>
+                        <a onclick="showNow(25,'wind_direction','wind direction','line')">Wind direction</a>
+                        <a onclick="showNow(25,'light','light','line')">Light</a>
+                        <a onclick="showNow(25,'temperature','temperature','line')">Temperature</a>
+                    </div>
+                </div>
+                <div id="hours24">
+                    <a>24 hours<span class="arrowDrop"></span></a>
+                    <div id="types24">
+                        <a onclick="showHourly('rain',24,'rain amount','line')">Rain</a>
+                        <a onclick="showHourly('wind_speed',24,'wind speed','line')">Wind speed</a>
+                        <a onclick="showHourly('wind_direction',24,'wind direction','line')">Wind direction</a>
+                        <a onclick="showHourly('light',24,'light','line')">Light</a>
+                        <a onclick="showHourly('temperature',24,'temperature','line')">Temperature</a>
+                    </div>
+                </div>        
+                <div id="hours48">
+                    <a>48 hours<span class="arrowDrop"></span></a>
+                    <div id="types48">
+                        <a onclick="showHourly('rain',48,'rain amount','line')">Rain</a>
+                        <a onclick="showHourly('wind_speed',48,'wind speed','line')">Wind speed</a>
+                        <a onclick="showHourly('wind_direction',48,'wind direction','line')">Wind direction</a>
+                        <a onclick="showHourly('light',48,'light','line')">Light</a>
+                        <a onclick="showHourly('temperature',48,'temperature','line')">Temperature</a>
+                    </div>
+                </div>                            
+                <div id="hours72">
+                    <a>72 hours<span class="arrowDrop"></span></a>
+                    <div id="types72">
+                        <a onclick="showHourly('rain',72,'rain amount','line')">Rain</a>
+                        <a onclick="showHourly('wind_speed',72,'wind speed','line')">Wind speed</a>
+                        <a onclick="showHourly('wind_direction',72,'wind direction','line')">Wind direction</a>
+                        <a onclick="showHourly('light',72,'light','line')">Light</a>
+                        <a onclick="showHourly('temperature',72,'temperature','line')">Temperature</a>
+                    </div>
+                </div>                              
+                <div id="week">
+                    <a>1 week<span class="arrowDrop"></span></a>
+                    <div id="typesWeek">
+                        <a onclick="showHourly('rain',168,'rain amount','line')">Rain</a>
+                        <a onclick="showHourly('wind_speed',168,'wind speed','line')">Wind speed</a>
+                        <a onclick="showHourly('wind_direction',168,'wind direction','line')">Wind direction</a>
+                        <a onclick="showHourly('light',168,'light','line')">Light</a>
+                        <a onclick="showHourly('temperature',168,'temperature','line')">Temperature</a>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        <div id="types"></div>
+        <div id="tableInfo">
+            <h3 id="h3"></h3>
+            <table id="table"></table>
+        </div>
+        <canvas width="1000" height="400" id="chart"></canvas>
+        <div id="info"></div>
+        <button id="theme" onclick="changeTheme()">Light mode</button>
+    </body>
+</html>
