@@ -50,7 +50,7 @@ showMixed =()=> {
                 }
             }).catch(err => {
                     console.log(err);
-                }); 
+                });
 }
 
 
@@ -115,8 +115,6 @@ const showChart=(axisX, axisY, chartTitle, chartType)=>{
                         color: "gray"
                     }
                 }]
-                
-                
             }
         }
     });
