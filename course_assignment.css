@@ -5,8 +5,8 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
-    width: 20%;
-    height: 40px; 
+    width: 19.99%;
+    height: 40px;
     cursor: pointer;
     background-color:deepskyblue;
     font-size: 16px;
@@ -64,8 +64,8 @@ h3{
     width: 100%;
     position: absolute;
     display: none;
-    background-color: deepskyblue; 
-    border-radius: 5px;   
+    background-color: deepskyblue;
+    border-radius: 5px;
     margin-left: 100%;
     border: solid black 0.5px;
 }
@@ -86,7 +86,7 @@ a{
     display: inline;
     width: 25%;
     font-size: 0;
-    
+
 }
 .dropdown-wind:hover .dropdown-content-wind {
     display: block;
@@ -95,8 +95,8 @@ a{
     width: 100%;
     position: absolute;
     display: none;
-    background-color: deepskyblue; 
-    border-radius: 5px;   
+    background-color: deepskyblue;
+    border-radius: 5px;
     margin-left: 200%;
     cursor: pointer;
     border: solid black 0.5px;
@@ -116,7 +116,7 @@ a{
     position: absolute;
     cursor: pointer;
     left: 80%;
-    background-color: deepskyblue; 
+    background-color: deepskyblue;
     border-radius: 5px;
     width: 7%;
     border: solid black 0.5px;
@@ -152,7 +152,7 @@ a{
 #typesNow a:hover{
     background-color: rgb(101, 211, 248);
     border-radius: 4px;
-    
+
 }
 #types24{
     display: none;
