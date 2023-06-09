@@ -1,5 +1,3 @@
-
-
 showMixed =()=> {
     document.getElementById("tableInfo").style.display="block";
     document.getElementById("info").style.display="none";
@@ -54,8 +52,6 @@ showMixed =()=> {
 }
 
 
-
-
 showInfo=()=>{
     if(weatherChart){
         weatherChart.destroy();
@@ -76,8 +72,6 @@ showInfo=()=>{
         document.getElementById("info").style.display = "block";
     }
 }
-
-
 
 
 let weatherChart = null;
@@ -119,8 +113,6 @@ const showChart=(axisX, axisY, chartTitle, chartType)=>{
         }
     });
 }
-
-
 
 
 showNow=(measurementAmount, weatherType, typeName, chartType)=>{
@@ -179,6 +171,7 @@ showNow=(measurementAmount, weatherType, typeName, chartType)=>{
         showChart(chartTime, chartValues, typeName, chartType);
     }).catch(err=>{console.log(err);});
 }
+
 
 showHourly=(weatherType, hours, typeName, chartType)=>{
     document.getElementById("tableInfo").style.display="block";
